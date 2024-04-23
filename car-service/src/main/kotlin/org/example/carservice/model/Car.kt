@@ -8,7 +8,7 @@ import jakarta.persistence.*
 class Car(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id : Long,
+    var id: Long,
     val number: String,
     val color: String,
     val model: String,
