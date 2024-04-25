@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: car-service
+          uri: lb://car-service
+          predicates:
+            - Path=/api/v1/car/**
