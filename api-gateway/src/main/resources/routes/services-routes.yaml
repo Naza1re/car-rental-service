@@ -6,3 +6,7 @@ spring:
           uri: lb://car-service
           predicates:
             - Path=/api/v1/car/**
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/api/v1/user

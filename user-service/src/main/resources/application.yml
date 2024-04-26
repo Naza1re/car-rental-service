@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: user-service
+  datasource:
+    url:
+    password: root
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.NonRegisteringDriver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8090/eureka
+server:
+  port: 8082
